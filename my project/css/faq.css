@@ -1,0 +1,50 @@
+
+.title {
+  padding: 5%;
+  text-align: center;
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+}
+#hide-title {
+  color: darkorchid;
+  animation-name: hide-title;
+  animation-duration: 4s;
+}
+
+@keyframes hide-title {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1.5;
+  }
+}
+
+
+.accordion {
+  box-shadow: 7px 4px 8px  darkorchid;
+  background-color: rgba(9, 148, 9, 0.655);
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  text-align: center;
+  padding: 10%;
+}
+.accordion-item {
+  text-align: center;
+ 
+}
+.container-quiz {
+  padding: 10% 5%;
+  text-align: center;
+}
+
+#submit {
+  margin-top: 15%;
+  padding: 1% 1%;
+  padding-right: 2.5%;
+  font-size: 3em;
+color: whitesmoke;
+  background-color: rgb(132, 0, 255);
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.452) 3px 5px;
+}

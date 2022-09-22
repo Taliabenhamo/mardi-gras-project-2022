@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  background-color: lightpink;
+}
+header {
+  background-color: purple;
+}
+li {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+.nav-link {
+  transition: 0.7 ease;
+}
+.nav-link:hover {
+  color: peru;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+@media (max-width:630px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color:purple;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin: 16px 0;;
+  }
+
+  .nav-menu.active{
+    left: 0;
+
+  }
+
+
+}
+
+/* footer */
+
+.contain-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: rgba(28, 13, 13, 0.743);
+  background-color: rgba(203, 255, 220, 0.593);
+}
+
+footer {
+  padding: 1% 1%;
+  flex: 1 0;
+  text-align: center;
+  align-content: center;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#icons {
+  width: 10vw;
+  padding: 2% 2%;
+}
+.conatin-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  padding: 1px 10px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 2em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-instagram {
+  background: rgba(255, 156, 234, 0.861);
+  color: white;
+}
+
+.fa-twitter {
+  background: rgb(68, 180, 198);
+  color: rgb(255, 255, 255);
+}
+.fa-facebook {
+  background: rgb(28, 2, 123);
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* header {
+  padding:1% 30%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+  background-color: rgb(144, 18, 144);
+}
+
+header a {
+
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+} 
+ header a:hover{
+  color: rgba(255, 182, 193, 0.546);
+ } */
